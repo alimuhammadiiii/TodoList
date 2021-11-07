@@ -8,10 +8,17 @@
     <title>Todo List</title>
 </head>
 <body>
+    <h1>Todo's</h1>
     <div class="container">
-        <h1>Todo's</h1>
-        <input type="text" class="todo" placeholder="Add Todo..."><button>+</button>
-        <ul class="todoList"></ul>
+        <div class=""><input type="text" class="input-todo" placeholder="Add Todo..."><button class="btn">+</button>
+            
+            <select name="todos" class="todo-filter">
+                <option value="all">All</option>
+                <option value="complete">complete</option>
+                <option value="uncomplete">uncomplete</option>
+            </select>
+        </div>
+        <ul class="todo-list"></ul>
     </div>
     <script src="sandbox.js"></script>
 </body>
