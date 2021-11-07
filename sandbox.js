@@ -50,7 +50,11 @@ const btnTodo = (e)=>{
     }
     if (item.classList[0]== "btn-edit"){
         const edit = item.parentElement
-        edit.contentEditable = "true";
+       if ( edit.contentEditable === "true"){
+        edit.contentEditable = "false";
+       }else {
+            edit.contentEditable = "true";
+       }
     }
    
 }
